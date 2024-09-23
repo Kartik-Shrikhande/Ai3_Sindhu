@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #0d0d0d;
+    overflow-y: scroll;
+    display: block;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .slider-section {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .slider-heading {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .slider-container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 80%;
+    margin: auto;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card {
+    min-width: 200px;
+    margin: 0 10px;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+  }
+  .card:hover {
+    transform: scale(1.05); 
+}
+  
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2em;
+    border-radius: 50%;
+    z-index: 10;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  .prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .dots-container {
+    margin-top: 20px;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: white;
+  }
+  .subtitle {
+    font-size: 1em;
+    color: #00ffcc;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+    
