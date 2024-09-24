@@ -7,6 +7,6 @@ router.post('/register',planController.registerUser);
 
 // Login user
 router.post('/login',planController.loginUser);
-router.get('/pricing', planController.getPricingPlans);
+// router.get('/pricing', planController.getPricingPlans);
 
 module.exports = router;

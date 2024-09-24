@@ -60,19 +60,6 @@ const createPricingPlan = async (req, res) => {
   }
 };
 
-const getPricingPlans = async (req, res) => {
-  try {
-      // Fetch all pricing plans from the database
-      const pricingPlans = await PricingPlan.find();
-
-      // Send the fetched pricing plans as a response
-       return res.status(200).json(pricingPlans);
-  } catch (error) {
-      // Handle errors
-      res.status(500).json({ message: 'Server error', error });
-  }
-};
-
 
 // const createPricingPlan = async (req, res) => {
 //   try {
@@ -151,7 +138,7 @@ module.exports = {
     registerUser,
     loginUser,
     createPricingPlan,
-    getPricingPlans
+    // getPricingPlans
 };
 
 
