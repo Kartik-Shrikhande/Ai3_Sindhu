@@ -8,6 +8,8 @@ require('dotenv').config({ path: '.env' })
 app.use(cors());
 app.use(express.json())
 
+app.use('/', router);  // Make sure you point to the correct path
+
 // app.use('/',router)
 //connecting mongodb with nodejs
 mongoose.connect(process.env.MONGO_URL)

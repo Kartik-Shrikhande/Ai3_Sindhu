@@ -66,7 +66,7 @@ const getPricingPlans = async (req, res) => {
       const pricingPlans = await PricingPlan.find();
 
       // Send the fetched pricing plans as a response
-      res.status(200).json(pricingPlans);
+       return res.status(200).json(pricingPlans);
   } catch (error) {
       // Handle errors
       res.status(500).json({ message: 'Server error', error });
