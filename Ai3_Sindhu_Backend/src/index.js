@@ -5,9 +5,7 @@ const mongoose = require("mongoose")
 const router = require("../src/routes/routes")
 const cors = require('cors');
 require('dotenv').config({ path: '.env' })
-app.use(cors({
-    origin: 'https://ai3-sindhu-41ia-server-opfkx6vjp-kartik-shrikhandes-projects.vercel.app/pricing' // Replace with your frontend URL
-  }));
+app.use(cors());
 app.use(express.json())
 
 app.use('/', router);  // Make sure you point to the correct path
