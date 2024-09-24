@@ -13,8 +13,6 @@
       }
     ],
     "env": {
-      "DB_HOST": "your-database-host",
-      "DB_USER": "your-database-user",
       "MONGO_URL":"mongodb+srv://kartik-DB:kartik11@kartik0.ctgmypp.mongodb.net/1ai3",
       "PORT" : "3000"
     }
