@@ -1,16 +1,16 @@
-const express = require('express');
-const multer = require('multer');
-const { uploadPDF,getAllPDFs,getPDFById } = require('../controllers/pdfControllers');
+// const express = require('express');
+// const multer = require('multer');
+// const { uploadPDF,getAllPDFs,getPDFById } = require('../controllers/pdfControllers');
 
-// Multer setup for file upload
-const upload = multer({ dest: 'uploads/' });
+// // Multer setup for file upload
+// const upload = multer({ dest: 'uploads/' });
 
-const router = express.Router();
+// const router = express.Router();
 
-router.post('/upload-pdf', upload.single('pdf'), uploadPDF);
+// router.post('/upload-pdf', upload.single('pdf'), uploadPDF);
 
-router.get('/pdfs', getAllPDFs);
+// router.get('/pdfs', getAllPDFs);
 
-// router.get('/pdfs/:id', getPDFById);
+// // router.get('/pdfs/:id', getPDFById);
 
-module.exports = router;
+// module.exports = router;
