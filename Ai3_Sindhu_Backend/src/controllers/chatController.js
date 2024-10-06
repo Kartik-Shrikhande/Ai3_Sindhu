@@ -7,6 +7,7 @@ const chatController = async (req, res) => {
   try {
     // Extract filters from the user's query
     const filters = extractFilters(query);
+// console.log("filters",filters);
 
     // Query MongoDB with the extracted filters
     const users = await userModel.find(filters);

@@ -19,7 +19,9 @@ app.use('/api', chatRoutes);
 // app.use('/pdf', pdfRoutes);
 app.use('/', router); 
 
-
+app.get('/',(req,res)=>{
+    res.send('Hello !! Welcome to Chat App')
+})
 
 mongoose.connect(process.env.MONGO_URL)
     .then(() => { console.log('MongoDB is connected !!') })
